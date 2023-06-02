@@ -96,54 +96,51 @@
     </head>
 
     <body>
-        <main>
-            <!-- Header -->
-            <header class="header">
-                <div class="container">
-                    <!-- header top -->
-                    <div class="header-top">
-                        <!-- logo -->
-                        <a>
-                            <div class="logo">
-                                <span class="logo__circle"></span>
-                                <span class="logo__text">
-                                    <span class="logo__brand">Shine</span>
-                                    <span class="logo__brand logo__brand--small"
-                                        >smile</span
-                                    >
-                                </span>
-                            </div>
-                        </a>
-                        <!-- navbar -->
-                        <nav class="nav">
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a
-                                        class="nav__link nav__link--active"
-                                        href="#!"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#!">Services</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#!">About</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#!">Doctors</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header-action">
-                            <a href="#!" class="header-action__link">Log In</a>
-                            <a href="#!" class="btn header-action__btn"
-                                >Sign Up</a
-                            >
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <!-- header top -->
+                <div class="header-top">
+                    <!-- logo -->
+                    <a>
+                        <div class="logo">
+                            <span class="logo__circle"></span>
+                            <span class="logo__text">
+                                <span class="logo__brand">Shine</span>
+                                <span class="logo__brand logo__brand--small"
+                                    >smile</span
+                                >
+                            </span>
                         </div>
+                    </a>
+                    <!-- navbar -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link nav__link--active" href="#!"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#!">Services</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#!">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#!">Doctors</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Log In</a>
+                        <a href="#!" class="btn header-action__btn">Sign Up</a>
                     </div>
-                    <!-- hero -->
-                    <section class="hero">
+                </div>
+
+                <!-- hero -->
+                <section class="hero">
+                    <section class="hero__body">
                         <!-- hero content -->
                         <section class="hero__content">
                             <h1 class="hero__heading">
@@ -174,8 +171,10 @@
                             />
                         </figure>
                     </section>
-                </div>
-            </header>
+                </section>
+            </div>
+        </header>
+        <main>
             <!-- Services -->
             <section class="services">
                 <div class="container">
@@ -195,7 +194,7 @@
                         </figure>
                         <div class="services__list">
                             <!-- Services 1 -->
-                            <div class="services__item">
+                            <section class="services__item">
                                 <span class="services__icon">
                                     <svg
                                         width="22"
@@ -219,9 +218,9 @@
                                         Cleanings, fillings, and x-rays.
                                     </p>
                                 </div>
-                            </div>
+                            </section>
                             <!-- Services 2 -->
-                            <div class="services__item">
+                            <section class="services__item">
                                 <span class="services__icon">
                                     <svg
                                         width="22"
@@ -245,9 +244,9 @@
                                         Cleanings, fillings, and x-rays.
                                     </p>
                                 </div>
-                            </div>
+                            </section>
                             <!-- Services 3 -->
-                            <div class="services__item">
+                            <section class="services__item">
                                 <span class="services__icon">
                                     <svg
                                         width="22"
@@ -272,7 +271,7 @@
                                         Cleanings, fillings, and x-rays.
                                     </p>
                                 </div>
-                            </div>
+                            </section>
 
                             <!-- Button -->
                             <a href="#!" class="btn services__btn"
@@ -292,7 +291,7 @@
                     </p>
                     <div class="work__list">
                         <!-- Work 1 -->
-                        <div class="work__item">
+                        <section class="work__item">
                             <img
                                 src="./assets/img/work-1.svg"
                                 alt=""
@@ -304,10 +303,10 @@
                                 experience-contact for inquiry.
                             </p>
                             <a href="#!" class="work__link">Learn More</a>
-                        </div>
+                        </section>
 
                         <!-- Work 2 -->
-                        <div class="work__item">
+                        <section class="work__item">
                             <img
                                 src="./assets/img/work-2.svg"
                                 alt=""
@@ -319,10 +318,10 @@
                                 experience-contact for inquiry.
                             </p>
                             <a href="#!" class="work__link">Learn More</a>
-                        </div>
+                        </section>
 
                         <!-- Work 3 -->
-                        <div class="work__item">
+                        <section class="work__item">
                             <img
                                 src="./assets/img/work-3.svg"
                                 alt=""
@@ -334,7 +333,7 @@
                                 experience-contact for inquiry.
                             </p>
                             <a href="#!" class="work__link">Learn More</a>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </section>
@@ -343,20 +342,22 @@
             <section class="features">
                 <div class="container">
                     <div class="features__row">
-                        <figure class="features__image">
-                            <img
-                                src="./assets/img/features-1.jpg"
-                                alt=""
-                                class="features__img"
-                            />
-                            <img
-                                src="./assets/img/features-2.jpg"
-                                alt=""
-                                class="features__img"
-                            />
-                        </figure>
+                        <div class="features__media">
+                            <figure class="features__image">
+                                <img
+                                    src="./assets/img/features-1.jpg"
+                                    alt=""
+                                    class="features__img"
+                                />
+                                <img
+                                    src="./assets/img/features-2.jpg"
+                                    alt=""
+                                    class="features__img"
+                                />
+                            </figure>
+                        </div>
 
-                        <div class="features__content">
+                        <section class="features__content">
                             <div class="features__heading heading-2">
                                 Take back your smile with shine.
                             </div>
@@ -368,7 +369,7 @@
                             <a href="#!" class="btn features__btn"
                                 >Learn More</a
                             >
-                        </div>
+                        </section>
                     </div>
                 </div>
             </section>
@@ -385,67 +386,68 @@
 
                     <div class="member__list">
                         <!-- Member 1 -->
-                        <div class="member__item">
-                            <figure class="member__image">
+                        <article class="member__item">
+                            <div class="member__image">
                                 <img
                                     src="./assets/img/member-1.png"
-                                    alt="Dentist"
+                                    alt="Dr. Essence Page"
                                     class="member__img"
                                 />
-                            </figure>
-                            <p class="member__name">Dr. Essence Page</p>
+                            </div>
+                            <h3 class="member__name">Dr. Essence Page</h3>
                             <p class="member__title">
                                 DDS, California - Linda University
                             </p>
-                        </div>
+                        </article>
 
                         <!-- Member 2 -->
-                        <div class="member__item">
-                            <figure class="member__image">
+                        <article class="member__item">
+                            <div class="member__image">
                                 <img
                                     src="./assets/img/member-2.png"
-                                    alt="Dentist"
+                                    alt="Dr. Essence Page"
                                     class="member__img"
                                 />
-                            </figure>
-                            <p class="member__name">Dr. Essence Page</p>
+                            </div>
+                            <h3 class="member__name">Dr. Essence Page</h3>
                             <p class="member__title">
                                 DDS, California - Linda University
                             </p>
-                        </div>
+                        </article>
 
                         <!-- Member 3 -->
-                        <div class="member__item">
-                            <figure class="member__image">
+                        <article class="member__item">
+                            <div class="member__image">
                                 <img
                                     src="./assets/img/member-3.png"
-                                    alt="Dentist"
+                                    alt="Dr. Essence Page"
                                     class="member__img"
                                 />
-                            </figure>
-                            <p class="member__name">Dr. Essence Page</p>
+                            </div>
+                            <h3 class="member__name">Dr. Essence Page</h3>
                             <p class="member__title">
                                 DDS, California - Linda University
                             </p>
-                        </div>
+                        </article>
 
                         <!-- Member 4 -->
-                        <div class="member__item">
-                            <figure class="member__image">
+                        <article class="member__item">
+                            <div class="member__image">
                                 <img
                                     src="./assets/img/member-4.png"
-                                    alt="Dentist"
+                                    alt="Dr. Essence Page"
                                     class="member__img"
                                 />
-                            </figure>
-                            <p class="member__name">Dr. Essence Page</p>
+                            </div>
+                            <h3 class="member__name">Dr. Essence Page</h3>
                             <p class="member__title">
                                 DDS, California - Linda University
                             </p>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="member__control">
+                        <!-- Previous btn -->
                         <button class="control-btn">
                             <svg
                                 width="8"
@@ -462,6 +464,7 @@
                                 />
                             </svg>
                         </button>
+                        <!-- Next btn -->
                         <button class="control-btn">
                             <svg
                                 width="8"
@@ -486,12 +489,14 @@
             <section class="install">
                 <div class="container">
                     <div class="install__body">
-                        <img
+                        <figure>
+                            <img
                             src="./assets/img/phone.png"
                             alt=""
                             class="install__img"
                         />
-                        <div class="install__content">
+                        </figure>
+                        <section class="install__content">
                             <h2 class="install__heading heading-2">
                                 Take back your smile with dentures
                             </h2>
@@ -526,7 +531,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </section>
@@ -534,8 +539,8 @@
             <!-- News -->
             <section class="news">
                 <div class="container">
-                    <div class="news__body">
-                        <div class="news__right">
+                    <section class="news__body">
+                        <div class="news__content">
                             <h2 class="news__heading heading-2">
                                 Read Latest News & Events.
                             </h2>
@@ -577,17 +582,19 @@
                         </div>
 
                         <div class="news__blogs">
-                            <div class="news__block">
-                                <img
+                            <article class="news__block">
+                                <figure>
+                                    <img
                                     src="./assets/img/news-1.png"
                                     alt=""
                                     class="news__img"
                                 />
-                                <div class="news__info">
-                                    <div class="news__title">
+                                </figure>
+                                <section class="news__info">
+                                    <h3 class="news__title">
                                         Key Considerations for Regulatory
                                         Compliant.
-                                    </div>
+                                    </h3>
                                     <p class="news__desc">
                                         It’s easy to think about medical care
                                         from a narrow perspective. You go to the
@@ -596,19 +603,21 @@
                                     <a href="#!" class="news__link-blog"
                                         >Learn More</a
                                     >
-                                </div>
-                            </div>
-                            <div class="news__block">
-                                <img
+                                </section>
+                            </article>
+                            <article class="news__block">
+                                <figure>
+                                    <img
                                     src="./assets/img/news-2.png"
                                     alt=""
                                     class="news__img"
                                 />
-                                <div class="news__info">
-                                    <div class="news__title">
+                                </figure>
+                                <section class="news__info">
+                                    <h3 class="news__title">
                                         Key Considerations for Regulatory
                                         Compliant.
-                                    </div>
+                                    </h3>
                                     <p class="news__desc">
                                         It’s easy to think about medical care
                                         from a narrow perspective. You go to the
@@ -617,10 +626,10 @@
                                     <a href="#!" class="news__link-blog"
                                         >Learn More</a
                                     >
-                                </div>
-                            </div>
+                                </section>
+                            </article>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </section>
 
@@ -640,110 +649,106 @@
                     </div>
                 </div>
             </section>
+        </main>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__body">
-                        <!-- column 1 -->
-                        <div class="footer__column-1">
-                            <!-- logo -->
-                            <a>
-                                <div class="logo">
-                                    <span class="logo__circle"></span>
-                                    <span class="logo__text">
-                                        <span class="logo__brand">Shine</span>
-                                        <span
-                                            class="logo__brand logo__brand--small"
-                                            >smile</span
-                                        >
-                                    </span>
-                                </div>
-                            </a>
-
-                            <div class="footer__desc">
-                                Exceptional dental care for all ages. Your great
-                                smile begins with a great dentist.
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <!-- column 1 -->
+                    <div class="footer__column-1">
+                        <!-- logo -->
+                        <a>
+                            <div class="logo">
+                                <span class="logo__circle"></span>
+                                <span class="logo__text">
+                                    <span class="logo__brand">Shine</span>
+                                    <span class="logo__brand logo__brand--small"
+                                        >smile</span
+                                    >
+                                </span>
                             </div>
-                        </div>
-                        <!-- column 2 -->
-                        <div class="footer__column-2">
-                            <div class="footer__head">Support</div>
-                            <ul class="footer__list">
-                                <li>
-                                    <a href="#!">Help center</a>
-                                    <a href="#!">Account information</a>
-                                    <a href="#!">About</a>
-                                    <a href="#!">Contact us</a>
-                                </li>
-                            </ul>
+                        </a>
 
-                            <div class="footer__head">Support</div>
-                            <ul class="footer__list">
-                                <li>
-                                    <a href="#!">Help center</a>
-                                    <a href="#!">Account information</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- column 3 -->
-                        <div class="footer__column-3">
-                            <div class="footer__head">Support</div>
-                            <ul class="footer__list">
-                                <li>
-                                    <a href="#!">Help center</a>
-                                    <a href="#!">Account information</a>
-                                </li>
-                            </ul>
-
-                            <div class="footer__head">Support</div>
-                            <ul class="footer__list">
-                                <li>
-                                    <a href="#!">Help center</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- column 4 -->
-                        <div class="footer__column-4">
-                            <div class="footer__head">Stay In Touch</div>
-                            <div class="footer__social">
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/f.svg"
-                                        alt=""
-                                        class="footer__icon"
-                                /></a>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/twitter.svg"
-                                        alt=""
-                                        class="footer__icon"
-                                /></a>
-                                <a href="#!"
-                                    ><img
-                                        src="./assets/img/linked_in.svg"
-                                        class="footer__icon"
-                                        alt=""
-                                /></a>
-                            </div>
-
-                            <div class="footer__head">Subscribe</div>
-                            <p class="footer__sub">
-                                Subscribe our newsletter for the latest update
-                                of Dental care
-                            </p>
-
-                            <form class="footer__form">
-                                <input
-                                    type="email"
-                                    value="Enter your email..."
-                                />
-                                <input type="submit" value="Subscribe" />
-                            </form>
+                        <div class="footer__desc">
+                            Exceptional dental care for all ages. Your great
+                            smile begins with a great dentist.
                         </div>
                     </div>
+                    <!-- column 2 -->
+                    <div class="footer__column-2">
+                        <div class="footer__head">Support</div>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#!">Help center</a>
+                                <a href="#!">Account information</a>
+                                <a href="#!">About</a>
+                                <a href="#!">Contact us</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__head">Support</div>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#!">Help center</a>
+                                <a href="#!">Account information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- column 3 -->
+                    <div class="footer__column-3">
+                        <div class="footer__head">Support</div>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#!">Help center</a>
+                                <a href="#!">Account information</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__head">Support</div>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#!">Help center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- column 4 -->
+                    <div class="footer__column-4">
+                        <div class="footer__head">Stay In Touch</div>
+                        <div class="footer__social">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/f.svg"
+                                    alt=""
+                                    class="footer__icon"
+                            /></a>
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/twitter.svg"
+                                    alt=""
+                                    class="footer__icon"
+                            /></a>
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/linked_in.svg"
+                                    class="footer__icon"
+                                    alt=""
+                            /></a>
+                        </div>
+
+                        <div class="footer__head">Subscribe</div>
+                        <p class="footer__sub">
+                            Subscribe our newsletter for the latest update of
+                            Dental care
+                        </p>
+
+                        <form class="footer__form">
+                            <input type="email" value="Enter your email..." />
+                            <input type="submit" value="Subscribe" />
+                        </form>
+                    </div>
                 </div>
-            </footer>
-        </main>
+            </div>
+        </footer>
     </body>
 </html>

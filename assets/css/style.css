@@ -73,12 +73,12 @@ a {
 }
 /* =============Header============== */
 
-header {
-    padding-top: 30px;
-    min-height: 100vh;
+.header {
+    height: 100vh;
     background: var(--primary-color-dark);
 }
 .header-top {
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,6 +173,8 @@ header {
 /* =========Hero=========== */
 .hero {
     margin-top: 76px;
+}
+.hero__body {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,6 +182,7 @@ header {
 .hero__content {
     width: 44.19%;
 }
+
 .hero__heading {
     font-weight: 600;
     font-size: 7rem;
@@ -194,31 +197,32 @@ header {
 .hero__row {
     margin-top: 38px;
 }
+
 .hero__phone {
     margin-left: 38px;
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
     color: #ffffff;
 }
 .hero__images {
     display: flex;
-    min-width: 534px;
+    align-items: center;
 }
-.hero__img:first-of-type {
+
+.hero__img {
     width: 330px;
     height: 540px;
     border-radius: 6px;
-    z-index: 1;
+    object-fit: cover;
 }
 
-.hero__img:last-of-type {
+.hero__img:first-child {
     position: relative;
-    top: 65px;
+    margin-right: -6px;
+}
+.hero__img:last-child {
     width: 210px;
     height: 410px;
-    border-radius: 0px 6px 6px 0px;
-    object-fit: cover;
 }
 
 /* =========Services=========== */
@@ -233,7 +237,10 @@ header {
 
 .services__desc {
     margin-top: 18px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
+    width: 468px;
 }
 .services__row {
     margin-top: 70px;
@@ -256,29 +263,29 @@ header {
     height: 128px;
     background: #ffffff;
     border-radius: 10px;
+    transition: 0.25s;
 }
 .services__item:hover {
     box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
+    position: relative;
 }
 
-.services__item:first-of-type .services__icon {
+.services__item:hover .services__icon {
     background: var(--primary-color-light);
     color: #ffffff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
-    border-radius: 999px;
 }
 
 .services__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 60px;
+    width: 60px;
     height: 60px;
     background: #eff6fd;
     color: var(--primary-color-dark);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
     border-radius: 999px;
+    transition: 0.25s;
 }
 
 .services__info {
@@ -288,6 +295,7 @@ header {
 .services__item-heading {
     font-weight: 600;
     font-size: 1.8rem;
+    line-height: 1.27;
     color: #10375c;
 }
 .services__item-desc {
@@ -302,17 +310,18 @@ header {
 
 /* =========How it works=========== */
 .work {
-    padding: 110px 0;
+    padding: 100px 0;
     background: #f7fbff;
 }
 .work__desc {
     margin-top: 18px;
+    width: 478px;
 }
 .work__list {
     margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
 }
 
 .work__item {
@@ -321,12 +330,17 @@ header {
     padding: 43px 42px;
     background: #ffffff;
     border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    transition: 0.25s;
 }
 
 .work__item:hover {
-    position: relative;
-    top: -6px;
+    transform: translateY(-16px);
     border-color: #2e80ce;
+}
+
+.work__item:hover .work__link {
+    color: var(--primary-color-light);
 }
 .work__item-heading {
     margin-top: 20px;
@@ -349,24 +363,24 @@ header {
     color: #575f66;
 }
 
-.work__item:nth-of-type(1) .work__link {
-    color: #2e80ce;
-}
-
 /* =========Features=========== */
 
 .features {
-    padding: 170px 0 206px 0;
+    padding: 170px 0;
 }
 
 .features__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 130px;
 }
 
+.features__media {
+    width: 48%;
+}
 .features__image {
     position: relative;
+    padding: 0 58px 121px 0;
 }
 
 .features__img {
@@ -376,16 +390,13 @@ header {
     border-radius: 6px;
 }
 
-.features__img:nth-of-type(2) {
+.features__img:last-child {
     position: absolute;
-    top: 121px;
-    right: -58px;
+    right: 0;
+    bottom: 0;
     width: 332px;
 }
 
-.features__content {
-    width: 40%;
-}
 .features__desc {
     margin-top: 18px;
 }
@@ -395,8 +406,7 @@ header {
 
 /* =========Member=========== */
 .member {
-    padding: 82px 0 85px;
-    background:#ffffff;
+    background: #ffffff;
 }
 .member__heading {
     text-align: center;
@@ -410,9 +420,9 @@ header {
 
 .member__list {
     margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
 }
 .member__image {
     display: flex;
@@ -422,6 +432,11 @@ header {
     height: 318px;
     background: #eaf6ff;
     border-radius: 6px;
+    transition: 0.2s;
+}
+
+.member__item:hover .member__image {
+    transform: scale(1.1);
 }
 .member__name {
     margin-top: 12px;
@@ -439,15 +454,22 @@ header {
     color: #575f66;
 }
 .member__control {
+    display: flex;
+    justify-content: center;
     margin-top: 38px;
-    text-align: center;
 }
+
 .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 36px;
     height: 36px;
     border: 1px solid #575f66;
     border-radius: 999px;
 }
+
 .control-btn:first-of-type {
     margin-right: 18px;
     transform: scaleX(-1);
@@ -461,8 +483,7 @@ header {
 
 /* =========Install=========== */
 .install {
-    margin-top: 180px;
-
+    margin-top: 260px;
     border-radius: 4px;
 }
 
@@ -475,8 +496,7 @@ header {
     border-radius: 4px;
 }
 .install__img {
-    position: relative;
-    top: -95px;
+    margin-top: -95px;
     width: 284px;
     height: 522px;
 }
@@ -501,9 +521,12 @@ header {
 .install__download {
     margin-top: 45px;
     display: flex;
+    
+   
 }
 .install__google,
 .install__apple {
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -512,6 +535,7 @@ header {
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 7px;
+    
 }
 .get {
     font-size: 10px;
@@ -541,6 +565,7 @@ header {
     line-height: 1.56;
     text-decoration-line: underline;
     color: var(--primary-color-dark);
+    text-underline-offset: 5px;
 }
 .news__control {
     margin-top: 28px;
@@ -552,15 +577,21 @@ header {
     gap: 30px;
 }
 
+
 .news__block {
     width: 270px;
     height: 375px;
     background: #ffffff;
     border-radius: 12px;
+    transition: 0.25s;
+    border: 1px solid #E8EBEE;
 }
 .news__block:hover {
     box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
+   border-color: #ffffff;
 }
+
+
 .news__info {
     padding: 18px 22px 21px;
 }
@@ -641,7 +672,7 @@ header {
     color: #ffffff;
 }
 
-.footer__head:nth-of-type(2){
+.footer__head:nth-of-type(2) {
     margin-top: 28px;
 }
 
@@ -658,9 +689,9 @@ header {
 }
 .footer__social {
     margin: 20px 0 28px 0;
-
 }
 .footer__icon {
+    margin-right: 10px;
     width: 32px;
     height: 32px;
     background: var(--primary-color-light);
