@@ -521,12 +521,9 @@ a {
 .install__download {
     margin-top: 45px;
     display: flex;
-    
-   
 }
 .install__google,
 .install__apple {
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -535,7 +532,6 @@ a {
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 7px;
-    
 }
 .get {
     font-size: 10px;
@@ -569,6 +565,7 @@ a {
 }
 .news__control {
     margin-top: 28px;
+    display: flex;
 }
 
 .news__blogs {
@@ -577,20 +574,18 @@ a {
     gap: 30px;
 }
 
-
 .news__block {
     width: 270px;
     height: 375px;
     background: #ffffff;
     border-radius: 12px;
     transition: 0.25s;
-    border: 1px solid #E8EBEE;
+    border: 1px solid #e8ebee;
 }
 .news__block:hover {
     box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
-   border-color: #ffffff;
+    border-color: #ffffff;
 }
-
 
 .news__info {
     padding: 18px 22px 21px;
